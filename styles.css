@@ -1,0 +1,129 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+}
+
+.main-card {
+    width: 35em;
+    height: auto;
+    padding: 3em;
+    background-color: white;
+    border-radius: 1em;
+    transition: left 0.8s;
+}
+
+.title {
+    width: auto;
+    height: 5em;
+    display: flex;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 3.3em;
+    margin-left: 0.4em;
+    color: hsl(292, 42%, 14%);
+}
+
+.QA-box {
+    width: auto;
+    height: auto;
+}
+
+.question-box {
+    width: auto;
+    height: auto;
+}
+.question{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 33.2em 2em;
+    align-items: center;
+}
+
+
+.question-box h2 {
+    font-size: 1.1em;
+    color: hsl(292, 42%, 14%);
+    cursor: pointer;
+}
+.icon-plus {
+    width: 2em;
+    height: 2em;
+    
+    background-image: url(./assets/images/icon-plus.svg);
+    background-repeat: no-repeat;
+}
+
+.icon-change {
+    background-image: url(./assets/images/icon-minus.svg);
+}
+.question-box h2:hover {
+    color: hsl(293, 61%, 52%);
+}
+.question-box p {
+    width: 34em;
+    color: hsl(292, 16%, 49%);
+    word-spacing: 0.1em;
+    line-height: 1.5;
+}
+
+.not-show {
+    display: none;
+}
+.question-box hr {
+    border: solid hsl(275, 100%, 97%) 1px;
+    margin: 1.5em 0 1.5em 0;
+}
+
+@media (max-width: 400px) {
+    body {
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+    }
+    .main-card {
+        width: 18em;
+        padding: 1.5em;
+    }
+    
+    .title {
+        width: auto;
+        height: 3em;
+        margin-bottom: 2em;
+    }
+    
+    .title h1 {
+        font-size: 2.5em;
+        margin-left: 0.8em;
+    }
+    img {
+        width: 2em;
+    }
+    
+    .QA-box {
+        width: auto;
+        height: auto;
+    }
+    
+    .question-box {
+        width: 18em;
+    }
+    .question {
+        grid-template-columns: 16em 2em;
+    }
+    .question-box h2 {
+        width: 13em;
+    }
+    
+    .question-box p {
+        width: 20em;
+        font-size: 0.9em;
+        word-spacing: 0.01em;
+    }
+}
