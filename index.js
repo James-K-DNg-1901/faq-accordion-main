@@ -18,4 +18,3 @@ questions[3].addEventListener("click", function() {
     answers[3].classList.toggle("not-show");
     icons[3].classList.toggle("icon-change");
 });
-document.
